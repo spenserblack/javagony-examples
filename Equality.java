@@ -14,7 +14,7 @@ public class Equality {
       System.out.printf("%d == %d is %s\n", a, c, e.getMessage());
     }
   }
-  
+
   public static void isEqual(final int a, final int b) throws TrueException, FalseException {
     try {
       final int equalityCheck = 1 / (a - b);
@@ -23,7 +23,7 @@ public class Equality {
     }
     throw new FalseException();
   }
-  
+
   static class TrueException extends Exception {
     public TrueException() {
       super("true");
