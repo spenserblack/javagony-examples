@@ -1,4 +1,4 @@
-public class Equals {
+public class Equality {
   public static void main(String []args) {
     final int a = 1;
     final int b = 0;
