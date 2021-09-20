@@ -1,6 +1,6 @@
-package examples.javagony;
+package javagony;
 
-import examples.javagony.exceptions.*;
+import javagony.exceptions.*;
 
 public class StringEquality {
   public static void main(String []args) {

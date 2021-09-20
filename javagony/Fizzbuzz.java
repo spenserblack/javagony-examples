@@ -1,4 +1,4 @@
-package examples.javagony;
+package javagony;
 
 public class Fizzbuzz {
   public static void main(String[] args) {

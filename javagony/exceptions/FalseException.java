@@ -1,4 +1,4 @@
-package examples.javagony.exceptions;
+package javagony.exceptions;
 
 public class FalseException extends BooleanException {
   public FalseException() {

@@ -1,4 +1,4 @@
-package examples.javagony.exceptions;
+package javagony.exceptions;
 
 public abstract class BooleanException extends Exception {
   public BooleanException() {
