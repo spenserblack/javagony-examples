@@ -98,6 +98,29 @@ public class NumericalComparison {
       t.reverse();
     } catch (FalseException f) {}
 
+    // Sign is 0 if positive
+    final int aSign = a & Integer.MIN_VALUE;
+    final int bSign = b & Integer.MIN_VALUE;
+
+    // If a < 0 and b >= 0, a < b is true
+    try {
+      final int check = 1 / bSign;
+
+      try {
+        final int check2 = 1 / aSign;
+      } catch (ArithmeticException aPositive) {
+        // b < 0, a >= 0
+        throw new FalseException();
+      }
+    } catch (ArithmeticException bPositive) {
+      try {
+        final int check = 1 / aSign;
+        // a < 0, b >= 0
+        throw new TrueException();
+      } catch (ArithmeticException aPositive) {
+      }
+    }
+
     try {
       isEqual(a, 0xFFFFFFFF);
     } catch(TrueException t) {
