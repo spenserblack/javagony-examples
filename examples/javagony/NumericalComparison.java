@@ -1,5 +1,7 @@
 package examples.javagony;
 
+import examples.javagony.exceptions.*;
+
 public class NumericalComparison {
   public static void main(String []args) {
     final int a = 1;
@@ -151,50 +153,6 @@ public class NumericalComparison {
       lessThan(a, b);
     } catch (BooleanException lt) {
       lt.reverse();
-    }
-  }
-
-  static abstract class BooleanException extends Exception {
-    public BooleanException() {
-      super();
-    }
-
-    public BooleanException(final String message) {
-      super(message);
-    }
-    public void reverse() throws BooleanException {};
-    public void reverse(final String message) throws BooleanException {};
-  }
-
-  static class TrueException extends BooleanException {
-    public TrueException() {
-      super("true");
-    }
-    public TrueException(final String message) {
-      super(message);
-    }
-
-    public void reverse() throws FalseException {
-      throw new FalseException();
-    }
-    public void reverse(final String message) throws FalseException {
-      throw new FalseException(message);
-    }
-  }
-
-  static class FalseException extends BooleanException {
-    public FalseException() {
-     super("false");
-    }
-    public FalseException(final String message) {
-      super(message);
-    }
-
-    public void reverse() throws TrueException {
-      throw new TrueException();
-    }
-    public void reverse(final String message) throws TrueException {
-      throw new TrueException(message);
     }
   }
 }
