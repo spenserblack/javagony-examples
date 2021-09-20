@@ -10,7 +10,7 @@ try {
   final int equal = 1 / (x - y);
   System.out.printf("%d != %d\n", x, y);
 } catch (ArithmeticException e) {
-  System.out.printf("%d == %d\b", x, y);
+  System.out.printf("%d == %d\n", x, y);
 }
 ```
 
