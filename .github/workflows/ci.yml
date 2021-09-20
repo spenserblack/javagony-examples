@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build all Java files
-        run: javac *.java
+        run: javac examples/javagony/*.java

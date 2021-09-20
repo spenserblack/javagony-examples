@@ -1,3 +1,5 @@
+package examples.javagony;
+
 public class NumericalComparison {
   public static void main(String []args) {
     final int a = 1;

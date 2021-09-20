@@ -1,3 +1,5 @@
+package examples.javagony;
+
 public class Fizzbuzz {
   public static void main(String[] args) {
     final int loopCount;

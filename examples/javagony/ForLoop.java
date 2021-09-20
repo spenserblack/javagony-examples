@@ -1,3 +1,5 @@
+package examples.javagony;
+
 public class ForLoop {
   public static void main(String []args) {
     example(10);
