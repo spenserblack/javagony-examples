@@ -16,4 +16,4 @@ try {
 
 ***
 
-See more complex examples at [`examples/javagony`](./examples/javagony).
+See more complex examples at [`javagony/`](./javagony).
