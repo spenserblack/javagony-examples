@@ -14,7 +14,7 @@ public class OddOrEvenChecker {
       int remainder = 1/(number%2);
       System.out.printf("%d is odd\n", number);
     } catch(ArithmeticException e) {
-      System.out.printf("%d is odd\n", number);
+      System.out.printf("%d is even\n", number);
     }
   }
 }
