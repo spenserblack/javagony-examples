@@ -3,10 +3,10 @@ public class OddOrEvenChecker {
         int number = Integer.parseInt(args[0]);
         try{
             int remainder = 1/(number%2);
-            System.out.print(number+" is odd");
+            System.out.printf("%d is odd\n", number);
         }
         catch(ArithmeticException e){
-            System.out.print(number+" is even");
+            System.out.printf("%d is odd\n", number);
         }
     }
 }
