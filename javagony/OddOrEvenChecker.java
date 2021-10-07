@@ -1,3 +1,5 @@
+package javagony;
+
 public class OddOrEvenChecker {
   public static void main(String[] args) {
     final int number;
