@@ -1,9 +1,11 @@
 package javagony;
 
-import static java.lang.Math.abs;
+import exceptions.BooleanException;
+import exceptions.FalseException;
+import exceptions.TrueException;
 
 public class FactorialOfANumber {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws BooleanException {
         final int number;
         try {
             number = Integer.parseInt(args[0]);
@@ -12,19 +14,13 @@ public class FactorialOfANumber {
             return;
         }
         try{
-            int check=1/(number+abs(number));
-        }catch (Exception e){
-            try{
-                int check = 1/number;
-            }catch(Exception exception)
-            {
-                System.out.println(factorial(number));
-                return;
-            }
+              NumericalComparison.lessThan(number,0);
+        }catch (TrueException trueException){
             System.out.println("Please pass a positive number in the command-line");
-            return;
+        } catch (FalseException falseException) {
+            System.out.println(factorial(number));
         }
-        System.out.println(factorial(number));
+
 
     }
 
@@ -37,4 +33,5 @@ public class FactorialOfANumber {
         }
     }
 }
+
 
