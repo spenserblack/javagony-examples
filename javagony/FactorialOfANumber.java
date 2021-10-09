@@ -1,8 +1,6 @@
 package javagony;
 
-import exceptions.BooleanException;
-import exceptions.FalseException;
-import exceptions.TrueException;
+import javagony.exceptions.*;
 
 public class FactorialOfANumber {
     public static void main(String[] args) throws BooleanException {
